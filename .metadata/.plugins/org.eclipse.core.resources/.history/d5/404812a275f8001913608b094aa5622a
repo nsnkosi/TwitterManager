@@ -1,0 +1,20 @@
+package service;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
+
+/**
+ * Session Bean implementation class TwitteEJB
+ */
+@Stateless
+@LocalBean
+public class TwitteEJB {
+
+    /**
+     * Default constructor. 
+     */
+    public TwitteEJB() {
+        // TODO Auto-generated constructor stub
+    }
+
+}

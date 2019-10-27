@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html">
+	
+    <h:head>
+        <title>Digital Bank</title>
+    </h:head>
+    <h:body>-
+    	<h2>Customer details - index.xhtml</h2>
+    	<h:form>
+    		<h:panelGrid columns="2" >
+    		<h:outputLabel value="Name : "/>
+    	   <h:inputText value="#{customercontroller.customer.custName}"></h:inputText>
+    	   <h:outputLabel value="SourcePassport : "/>
+    	   <h:inputText value="#{customercontroller.customer.source_Passport}"></h:inputText>
+    	   <h:outputLabel value="DestinationPassport : "/>
+    	   <h:inputText value="#{customercontroller.customer.dest_Passport}">
+            <h:outputLabel value="DestinationBank : "/>
+    	   <h:inputText value="#{customercontroller.customer.dest_Bank}">
+            <h:outputLabel value="DestinationCountry : "/>
+    	   <h:inputText value="#{customercontroller.customer.dest_Country}">
+           <h:outputLabel value="AccountNumber : "/>
+    	   <h:inputText value="#{customercontroller.customer.acc_Num}">
+           <h:outputLabel value="Amount : "/>
+    	   <h:inputText value="#{customercontroller.customer.Amount}">
+                
+               </h:inputText>
+    	   </h:panelGrid>
+    	   <h:commandButton value="submit" action="#{customercontroller.addNewCustomer}"></h:commandButton>
+    	</h:form>
+    </h:body>
+</html>

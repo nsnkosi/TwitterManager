@@ -1,0 +1,29 @@
+package controller;
+
+import javax.annotation.ManagedBean;
+import javax.faces.bean.ManagedProperty;
+import javax.faces.bean.SessionScoped;
+
+import model.Twitte;
+
+@ManagedBean
+@SessionScoped
+public class TwitteController {
+	@ManagedProperty(value="#{Twitte}")
+	
+	private Twitte twitter;
+	
+	public Twitte getTwitter() {
+		return twitter;
+	}
+
+	public void setTwitter(Twitte twitter) {
+		this.twitter = twitter;
+	}
+
+	private void postTwitte() {
+		System.out.println("it works");
+	}
+	
+
+}

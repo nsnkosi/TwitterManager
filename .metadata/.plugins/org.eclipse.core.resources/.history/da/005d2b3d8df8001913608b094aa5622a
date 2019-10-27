@@ -1,0 +1,28 @@
+package service;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import model.TwitteEntity;
+
+/**
+ * Session Bean implementation class TwitteEJB
+ */
+@Stateless
+@LocalBean
+public class TwitteEJB {
+	
+	@PersistenceContext
+	private EntityManager em;
+  
+    public TwitteEJB() {
+        // TODO Auto-generated constructor stub
+    }
+
+    public void NewTweet(TwitteEntity twitteentity) {
+    	
+    	em.persist(twitteentity);
+    }
+}
