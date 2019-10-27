@@ -1,0 +1,45 @@
+package model;
+
+import java.io.Serializable;
+import java.util.Date;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+import java.io.Serializable;
+import java.util.Date;
+//import entities.TwitterEntity;
+
+@ManagedBean(name = "Twitter")
+@SessionScoped
+
+public class Twitte implements Serializable {
+	
+	private String message;
+	private Date timeStamp;
+	
+	private static final long serialVersionUID = 1L;
+	
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public Date getTimeStamp() {
+		return timeStamp;
+	}
+
+	public void setTimeStamp(Date timeStamp) {
+		this.timeStamp = timeStamp;	
+	}
+
+
+	/*
+		twittes.setMessage(message);
+		twittes.setTimeStamp(timeStamp);
+		
+		return twittes;
+	}*/
+
+}
